@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かんたん見積もり・利益計算</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>かんたん見積もり・利益計算</h1>
+  <p class="description">販売価格・原価・数量を入力するだけで、売上・利益・利益率をかんたん確認できます。</p>
+  <p class="sub-description">無料・登録不要・ブラウザだけで使えます。</p>
+  <div class="how-to-use">
+  <strong>使い方</strong>
+  <p>① 販売価格・原価・数量を入力</p>
+  <p>② 消費税率を選択</p>
+  <p>③ 売上・利益・利益率を確認</p>
+</div>
+  <p>販売価格（税込前・1個あたり）</p>
+  <input type="number" id="price" placeholder="例：10,000円">
+
+  <p>原価（税込前・1個あたり）</p>
+  <input type="number" id="cost" placeholder="例：6000円">
+
+  <p>数量（個数）</p>
+  <input type="number" id="quantity" placeholder="例：10個" min="1">
+  <small>※1個以上の数量を入力してください</small>
+  <p>消費税率を選択</p>
+<select id="taxRate">
+  <option value="" disabled>税率を選択してください</option>
+  <option value="0.10">10%</option>
+  <option value="0.08">8%</option>
+  <option value="0">計算なし</option>
+</select>
+
+  <br>
+
+  <button id="clearButton">入力内容をすべてクリア</button>
+
+  <h2>計算結果</h2>
+
+  <div class="result-box">
+    <p>売上：<span id="sales">0</span> 円</p>
+    <p>原価：<span id="totalCost">0</span> 円</p>
+    <p>利益：<span id="profit">0</span> 円</p>
+    <p>判定：<span id="profitStatus">未入力</span></p>
+    <p>利益率：<span id="profitRate">0</span> %</p>
+    <small>利益率 ＝ 利益 ÷ 売上 × 100</small>
+    <p>消費税：<span id="tax">0</span></p>
+    <p><span id="salesWithTaxLabel">税込売上</span>：<span id="salesWithTax">0</span> 円</p>
+    
+  </div>
+
+  <button id="copyButton" type="button">計算結果をコピー</button>
+  <button id="saveButton">この計算を保存</button>
+  <button id="loadButton">保存した計算を読み込む</button>
+  <p id="message"></p>
+  <span id="copyMessage"></span>
+    <small>コピーした結果を、メールやメモなどに貼り付けできます。</small>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

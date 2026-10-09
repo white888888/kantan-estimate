@@ -1,0 +1,238 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: right;
+}
+
+h2 {
+  margin-top: 30px;
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.result-box {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+#profit {
+  font-size: 28px;
+  color: black;
+}
+
+
+#sales,
+#totalCost,
+#profit,
+#profitRate,
+#tax,
+#salesWithTax {
+  font-weight: bold;
+}
+
+#clearButton {
+  padding: 15px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+#clearButton:hover {
+  background-color: #dddddd;
+  transform: scale(1.02);
+}
+
+small {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-top: -8px;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+select:focus,
+input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+#profitRate {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.result-box p:nth-child(3),
+.result-box p:nth-child(4) {
+  font-weight: bold;
+}
+
+.result-box p:nth-child(3) {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.result-box p:nth-child(4) {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.result-box p {
+  margin: 12px 0;
+  font-size: 18px;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#taxRate {
+  margin-top: 0;
+}
+
+#profitStatus {
+  font-weight: bold;
+}
+
+.result-box p:nth-child(4) {
+  font-weight: bold;
+}
+
+.result-box p:nth-child(5) {
+  font-weight: bold;
+}
+
+#profitStatus {
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+#copyButton {
+  margin-bottom: 10px;
+}
+
+.how-to-use {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.how-to-use strong {
+  font-size: 18px;
+}
+
+.how-to-use p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.sub-description {
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+#copyButton {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+#copyMessage {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.result-box p + small {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: -5px;
+  margin-bottom: 12px;
+}
+
+
+#saveButton,
+#loadButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e8eefc;
+  color: #234;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#saveButton:hover,
+#loadButton:hover {
+  background-color: #d5e1fa;
+}
+
+
+#message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
