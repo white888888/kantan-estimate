@@ -8,7 +8,7 @@ https://white888888.github.io/kantan-estimate/
 
 不具合対応や計算テストなど、開発過程・改善内容は以下にまとめています。
 
-- 開発・改善記録（DEVELOPMENT_LOG.md）
+- [開発・改善記録（DEVELOPMENT_LOG.md）](./DEVELOPMENT_LOG.md)
 
 ## 概要
 
